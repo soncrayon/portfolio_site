@@ -10,6 +10,7 @@ html {
     padding: 0;
     margin: 0; 
     padding: 1%;
+
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
+
 }
 
 #header_section {
@@ -110,6 +112,7 @@ body {
 }
 
 .individual_project_div_small {
+    position: relative; 
     width: 100%;
     height: 30%;
     padding: 0;
@@ -124,11 +127,12 @@ body {
 }
 
 .individual_project_div_small img:hover {
-  opacity: 0.6;
+  opacity: 0.2;
   cursor: pointer;
 }
 
 .individual_project_div_large {
+    position: relative;
     width: 100%;
     height: 60%;
     padding: 0;
@@ -143,6 +147,18 @@ body {
 }
 
 .individual_project_div_large img:hover {
-    opacity: 0.6;
+    opacity: 0.2;
     cursor: pointer;
+  }
+
+  #matching-game img {
+    object-fit: contain;
+  }
+
+  .app-title-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
