@@ -1,0 +1,75 @@
+$font-stack: 'Montserrat', sans-serif
+$primary-color: #211f1e
+$font-color: white 
+%flex-general-display
+    display: flex
+    justify-content: center 
+    text-align: center
+    align-items: center
+%flex-column-center-display
+    @extend %flex-general-display
+    flex-direction: column 
+%flex-row-center-display
+    @extend %flex-general-display
+    flex-direction: row 
+
+
+* 
+    font-family: $font-stack
+    color: $font-color
+    background-color: $primary-color
+    // border-style: solid
+    // border-color: white 
+    box-sizing: content-box 
+
+html
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+
+body
+    @extend %flex-row-center-display
+    height: 100%
+    width: 100% 
+    margin: 0
+    padding: 0
+
+#all-text
+    @extend %flex-column-center-display
+    height: 80% 
+    width: 50%
+
+.text-section
+    @extend %flex-column-center-display
+    width: 100% 
+    
+#name
+    @extend %flex-column-center-display
+    width: 100% 
+    height: 10% 
+    font-size: 2.5rem
+    font-weight: bold 
+    padding: 0
+
+#links
+    margin-top: 10%
+    display: flex
+    flex-direction: row 
+    justify-content: space-around
+    width: 100%
+
+    button 
+        width: 8rem
+        height: 2rem 
+        background-color: white
+        color: black
+        border-radius: 0.5rem 
+        
+    button:hover 
+        cursor: pointer 
+
+
+    
+    
+
