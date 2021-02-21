@@ -1,4 +1,5 @@
 showDetails = (id) => {
+    console.log(id)
     // gray out the background
     // display a modal in a black-outlined white box, containing project title and two links--
     // one link to hosted site
