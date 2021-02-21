@@ -30,7 +30,6 @@ const projectLinks = {
 
 
 showDetails = (id) => {
-    debugger
     document.getElementById('modal_container').style.display = 'flex'
  
     if (id === 'ori' || id === 'matching_game'){
